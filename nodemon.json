@@ -1,0 +1,9 @@
+{
+    "env": {
+        "MONGO_ATLAS_PW": "Test@1223",
+        "MONGO_URI_OLD": "mongodb+srv://skybookuser:skybookuser123@skybookcluster.ouwzj.mongodb.net/SkyBook",
+        "MONGO_URI": "mongodb://localhost:27017/quizkaro",
+        "JWT_KEY": "secret",
+        "PROXY": "http://localhost:8001"
+    }
+}
