@@ -10,7 +10,7 @@ const mongoose = require('mongoose')
 const userRouter = require('./api/routes/userRoute')
 const quizRouter = require('./api/routes/quizRoute')
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(process.env.MONGO_URI_ONLINE, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
