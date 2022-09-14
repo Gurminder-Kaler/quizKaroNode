@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 const userSchema = Schema({
   _id: Schema.Types.ObjectId,
   role: { type: String, required: true },

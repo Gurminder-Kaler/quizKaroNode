@@ -93,6 +93,7 @@ exports.verifyOTP = async (req, res) => {
     });
   }
 };
+
 exports.updatePassword = async (req, res) => {
   try {
     return await updatePasswordServiceFunc(req, res);

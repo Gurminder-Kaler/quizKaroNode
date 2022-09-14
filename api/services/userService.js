@@ -331,7 +331,6 @@ const sendForgotPasswordOTPEmailServiceFunc = async (req, res) => {
     email: req.body.email,
   })
     .then((user) => {
-      let randomOTP = generateOTP();
       if (!user) {
         return res.json({
           status: 401,
@@ -339,6 +338,7 @@ const sendForgotPasswordOTPEmailServiceFunc = async (req, res) => {
           message: messages.FAILURE.USER_NOT_FOUND,
         });
       }
+      let randomOTP = generateOTP();
       let fields = {
         otp: randomOTP,
       };

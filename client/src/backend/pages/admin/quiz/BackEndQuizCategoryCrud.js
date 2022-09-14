@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 // import { Link } from 'react-router-dom'
-import BackEndCategoryAdd from './BackEndCategoryAdd'
+// import BackEndCategoryAdd from './BackEndCategoryAdd'
 import BackEndLayout from '../../../layouts/BackEndLayout'
 import {
   getAllQuizCategories,
@@ -88,7 +88,7 @@ class BackEndQuizCategoryCrud extends Component {
           </div>
           <section className='content'>
             <div className='container-fluid'>
-              <BackEndCategoryAdd />
+              {/* <BackEndCategoryAdd /> */}
               <div className='row'>
                 <div className='col-12'>
                   <div className='card'>

@@ -72,5 +72,5 @@ export const updateQuizCategoryAction = res => {
 
 // Profile loading
 export const getAllQuizCategoriesAction = res => {
-  return { type: GET_ALL_PROFESSIONS, payload: res }
+  return { type: GET_ALL_QUIZ_CATEGORIES, payload: res }
 }

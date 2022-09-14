@@ -6,7 +6,7 @@ import store from "../../client/src/store/store";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "../src/utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "../src/actions/authActions";
-import { clearCurrentProfile } from "../src/actions/profileActions";
+// import { clearCurrentProfile } from "../src/actions/profileActions";
 import adminRoutes from "../../client/src/routes/adminRoutes";
 import customerRoutes from "../../client/src/routes/customerRoutes";
 import guestRoutes from "../../client/src/routes/guestRoutes";
@@ -24,7 +24,7 @@ if (localStorage.jwtToken) {
   const currentTime = Date.now() / 1000;
   if (decoded.exp < currentTime) {
     store.dispatch(logoutUser());
-    store.dispatch(clearCurrentProfile());
+    // store.dispatch(clearCurrentProfile());
     //clear current Profile
     window.location.href = "/login";
   }
